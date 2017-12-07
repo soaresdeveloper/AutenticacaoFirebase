@@ -1,5 +1,6 @@
 package br.com.soaresdeveloper.autenticacaofirebase;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseUser user;
     private EditText mEmail, mPassword;
-    private Button btnEntrar;
+    private Button btnEntrar, btnCadastrese;
     private TextView mHello;
 
     private static final String TAG = "LOG: ";
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         mEmail = (EditText) findViewById(R.id.email);
         mPassword = (EditText) findViewById(R.id.password);
         btnEntrar = (Button) findViewById(R.id.btnEntrar);
+        btnCadastrese = (Button) findViewById(R.id.btnRegistrese);
         mHello = (TextView) findViewById(R.id.hello);
 
         mAuth = FirebaseAuth.getInstance();
@@ -42,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 logar(mEmail.getText().toString(), mPassword.getText().toString());
+            }
+        });
+
+        btnCadastrese.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CadastrarActivity.class);
+                startActivity(intent);
             }
         });
 

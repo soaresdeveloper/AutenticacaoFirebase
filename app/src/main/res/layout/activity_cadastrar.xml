@@ -7,11 +7,11 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="br.com.soaresdeveloper.autenticacaofirebase.MainActivity">
+    tools:context="br.com.soaresdeveloper.autenticacaofirebase.CadastrarActivity">
 
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/cEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -20,7 +20,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/cPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -28,27 +28,24 @@
         android:hint="Senha"
         android:inputType="textPassword" />
 
+    <EditText
+        android:id="@+id/confirmarPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword" />
+
     <Button
-        android:id="@+id/btnEntrar"
+        android:id="@+id/btnCadastrar"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_marginBottom="16dp"
         android:background="@color/colorPrimaryDark"
 
         android:padding="8dp"
-        android:text="ENTRAR"
-        android:textColor="#fff"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/btnRegistrese"
-        android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/colorAccent"
-
-        android:padding="8dp"
-        android:text="CADASTRE-SE"
+        android:text="CADASTRAR"
         android:textColor="#fff"
         android:textSize="24sp" />
 
