@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AutenticacaoFirebase</string>
+    <string name="facebook_app_name">TesteAutenticacao</string>
+    <string name="facebook_app_id">885899891588069</string>
+    <string name="fb_login_protocol_scheme">fb885899891588069</string>
+
 </resources>
